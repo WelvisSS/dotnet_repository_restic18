@@ -1,11 +1,8 @@
-﻿bool condicao1 = true;
-bool condicao2 = false;
+﻿bool condition1 = true;
+bool condition2 = false;
 
-if (condicao1 && condicao2)
-{
-    Console.WriteLine("Ambas as condições são verdadeiras");
-}
-else
-{
-    Console.WriteLine("Pelo menos uma das condições é falsa");
+if (condition1 && condition2){
+    Console.WriteLine("Both conditions are true");
+}else{
+    Console.WriteLine("At least one of the conditions is false");
 }
