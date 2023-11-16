@@ -1,1 +1,3 @@
-# dotnet_repository_restic18
+# Atividade .NET Lista 1
+## Aluno:
+### Welvis Silva Souza
