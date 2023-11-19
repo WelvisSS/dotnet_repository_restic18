@@ -111,7 +111,7 @@ class ToDoList
                         SearchByKeyword();
                         break;
                     case 8:
-                        // ShowStatistics();
+                        ShowStatistics();
                         break;
                     case 9:
                         exit = true;
@@ -256,6 +256,25 @@ class ToDoList
             {
                 Console.WriteLine($"{taskNumber++} - Título: {task.getTitle()} | Descrição: {task.getDescription()} | Data de Vencimento: {task.getDueDate().ToString("dd/MM/yyyy")} | Concluída: {(task.getIsCompleted() ? "Sim" : "Não")}");
             }
+        }
+    }
+
+    static void ShowStatistics()
+    {
+        Console.WriteLine($"Número de tarefas concluídas: {tasks.Count(task => task.getIsCompleted())}");
+        Console.WriteLine($"Número de tarefas pendentes: {tasks.Count(task => !task.getIsCompleted())}");
+
+        if (tasks.Count > 0)
+        {
+            var oldestTask = tasks.OrderBy(task => task.getDueDate()).First();
+            var newestTask = tasks.OrderByDescending(task => task.getDueDate()).First();
+
+            Console.WriteLine($"Tarefa mais antiga: {oldestTask.getTitle()} | Data de Vencimento: {oldestTask.getDueDate().ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"Tarefa mais recente: {newestTask.getTitle()} | Data de Vencimento: {newestTask.getDueDate().ToString("dd/MM/yyyy")}");
+        }
+        else
+        {
+            Console.WriteLine("Não há tarefas para exibir estatísticas.");
         }
     }
 }
