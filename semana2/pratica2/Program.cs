@@ -141,15 +141,16 @@ class ToDoList
         newTask.setDescription(Console.ReadLine());
 
         Console.WriteLine("Digite a data de vencimento (formato: dd/mm/yyyy): ");
-        // if (DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime dueDate))
-        // {
-        //     newTask.setDueDate(dueDate);
-        // }
-        // else
-        // {
-        //     Console.WriteLine("Data inválida. A tarefa não terá uma data de vencimento.");
-        //     newTask.setDueDate(DateTime.MinValue);
-        // }
+
+        if (DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime dueDate))
+        {
+            newTask.setDate(dueDate);
+        }
+        else
+        {
+            Console.WriteLine("Data inválida. A tarefa não terá uma data de vencimento.");
+            newTask.setDate(DateTime.MinValue);
+        }
 
         newTask.setIsCompleted(false);
 
