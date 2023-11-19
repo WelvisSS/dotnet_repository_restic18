@@ -99,7 +99,7 @@ class ToDoList
                         MarkTaskAsCompleted();
                         break;
                     case 4:
-                        // ListPendingTasks();
+                        ListPendingTasks();
                         break;
                     case 5:
                         // ListCompletedTasks();
@@ -185,6 +185,24 @@ class ToDoList
         else
         {
             Console.WriteLine("Número de tarefa inválido.");
+        }
+    }
+
+    static void ListPendingTasks()
+    {
+        var pendingTasks = tasks.Where(task => !task.getIsCompleted()).ToList();
+
+        if (pendingTasks.Count == 0)
+        {
+            Console.WriteLine("Não há tarefas pendentes.");
+        }
+        else
+        {
+            int taskNumber = 1;
+            foreach (var task in pendingTasks)
+            {
+                Console.WriteLine($"{taskNumber++} - Título: {task.getTitle()} | Descrição: {task.getDescription()} | Data de Vencimento: {task.getDueDate().ToString("dd/MM/yyyy")}");
+            }
         }
     }
 
