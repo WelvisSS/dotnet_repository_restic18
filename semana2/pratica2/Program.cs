@@ -102,7 +102,7 @@ class ToDoList
                         ListPendingTasks();
                         break;
                     case 5:
-                        // ListCompletedTasks();
+                        ListCompletedTasks();
                         break;
                     case 6:
                         // DeleteTask();
@@ -206,5 +206,21 @@ class ToDoList
         }
     }
 
+    static void ListCompletedTasks()
+    {
+        var completedTasks = tasks.Where(task => task.getIsCompleted()).ToList();
 
+        if (completedTasks.Count == 0)
+        {
+            Console.WriteLine("Não há tarefas concluídas.");
+        }
+        else
+        {
+            int taskNumber = 1;
+            foreach (var task in completedTasks)
+            {
+                Console.WriteLine($"{taskNumber++} - Título: {task.getTitle()} | Descrição: {task.getDescription()} | Data de Vencimento: {task.getDueDate().ToString("dd/MM/yyyy")}");
+            }
+        }
+    }
 }
