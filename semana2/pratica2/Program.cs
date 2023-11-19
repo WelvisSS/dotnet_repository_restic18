@@ -2,8 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 
+
+public class Task
+{
+    public Task(string title, string description, DateTime dueDate, bool isCompleted)
+    {
+        this.Title = title;
+        this.Description = description;
+        this.DueDate = dueDate;
+        this.IsCompleted = isCompleted;
+    }
+
+    private string Title;
+    private string Description;
+    private DateTime DueDate;
+    private bool IsCompleted;
+}
+
 class ToDoList
 {
+    static List<Task> tasks = new List<Task>();
 
     static void Main()
     {
@@ -28,20 +46,28 @@ class ToDoList
                 switch (choice)
                 {
                     case 1:
+                        // CreateTask();
                         break;
                     case 2:
+                        // ListAllTasks();
                         break;
                     case 3:
+                        // MarkTaskAsCompleted();
                         break;
                     case 4:
+                        // ListPendingTasks();
                         break;
                     case 5:
+                        // ListCompletedTasks();
                         break;
                     case 6:
+                        // DeleteTask();
                         break;
                     case 7:
+                        // SearchByKeyword();
                         break;
                     case 8:
+                        // ShowStatistics();
                         break;
                     case 9:
                         exit = true;
@@ -59,5 +85,4 @@ class ToDoList
             Console.WriteLine();
         }
     }
-
 }
