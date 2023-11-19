@@ -108,7 +108,7 @@ class ToDoList
                         DeleteTask();
                         break;
                     case 7:
-                        // SearchByKeyword();
+                        SearchByKeyword();
                         break;
                     case 8:
                         // ShowStatistics();
@@ -235,6 +235,27 @@ class ToDoList
         else
         {
             Console.WriteLine("Número de tarefa inválido.");
+        }
+    }
+
+    static void SearchByKeyword()
+    {
+        Console.WriteLine("Digite a palavra-chave para buscar tarefas: ");
+        string keyword = Console.ReadLine();
+
+        var foundTasks = tasks.Where(task => task.getTitle().Contains(keyword) || task.getDescription().Contains(keyword)).ToList();
+
+        if (foundTasks.Count == 0)
+        {
+            Console.WriteLine("Nenhuma tarefa encontrada com a palavra-chave fornecida.");
+        }
+        else
+        {
+            int taskNumber = 1;
+            foreach (var task in foundTasks)
+            {
+                Console.WriteLine($"{taskNumber++} - Título: {task.getTitle()} | Descrição: {task.getDescription()} | Data de Vencimento: {task.getDueDate().ToString("dd/MM/yyyy")} | Concluída: {(task.getIsCompleted() ? "Sim" : "Não")}");
+            }
         }
     }
 }
