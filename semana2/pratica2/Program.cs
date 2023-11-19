@@ -105,7 +105,7 @@ class ToDoList
                         ListCompletedTasks();
                         break;
                     case 6:
-                        // DeleteTask();
+                        DeleteTask();
                         break;
                     case 7:
                         // SearchByKeyword();
@@ -221,6 +221,20 @@ class ToDoList
             {
                 Console.WriteLine($"{taskNumber++} - Título: {task.getTitle()} | Descrição: {task.getDescription()} | Data de Vencimento: {task.getDueDate().ToString("dd/MM/yyyy")}");
             }
+        }
+    }
+
+    static void DeleteTask()
+    {
+        Console.WriteLine("Digite o número da tarefa que deseja excluir: ");
+        if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber > 0 && taskNumber <= tasks.Count)
+        {
+            tasks.RemoveAt(taskNumber - 1);
+            Console.WriteLine("Tarefa excluída com sucesso.");
+        }
+        else
+        {
+            Console.WriteLine("Número de tarefa inválido.");
         }
     }
 }
