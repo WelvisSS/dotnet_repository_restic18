@@ -96,7 +96,7 @@ class ToDoList
                         ListAllTasks();
                         break;
                     case 3:
-                        // MarkTaskAsCompleted();
+                        MarkTaskAsCompleted();
                         break;
                     case 4:
                         // ListPendingTasks();
@@ -166,11 +166,27 @@ class ToDoList
         }
         else
         {
+            int taskNumber = 1;
             foreach (var task in tasks)
             {
-                Console.WriteLine($"Título: {task.getTitle()} | Descrição: {task.getDescription()} | Data de Vencimento: {task.getDueDate().ToString("dd/MM/yyyy")} | Concluída: {(task.getIsCompleted() ? "Sim" : "Não")}");
+                Console.WriteLine($"{taskNumber++} - Título: {task.getTitle()} | Descrição: {task.getDescription()} | Data de Vencimento: {task.getDueDate().ToString("dd/MM/yyyy")} | Concluída: {(task.getIsCompleted() ? "Sim" : "Não")}");
             }
         }
     }
+
+    static void MarkTaskAsCompleted()
+    {
+        Console.WriteLine("Digite o número da tarefa que deseja marcar como concluída: ");
+        if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber > 0 && taskNumber <= tasks.Count)
+        {
+            tasks[taskNumber - 1].setIsCompleted(true);
+            Console.WriteLine("Tarefa marcada como concluída.");
+        }
+        else
+        {
+            Console.WriteLine("Número de tarefa inválido.");
+        }
+    }
+
 
 }
