@@ -13,10 +13,54 @@ public class Task
         this.IsCompleted = isCompleted;
     }
 
+    public Task()
+    {
+    }
+
     private string Title;
     private string Description;
     private DateTime DueDate;
     private bool IsCompleted;
+
+    public void setTitle(string title)
+    {
+        this.Title = title;
+    }
+
+    public void setDescription(string description)
+    {
+        this.Description = description;
+    }
+
+    public void setDate(DateTime date)
+    {
+        this.DueDate = date;
+    }
+
+    public void setIsCompleted(bool isCompleted)
+    {
+        this.IsCompleted = isCompleted;
+    }
+
+    public string getTitle()
+    {
+        return this.Title;
+    }
+
+    public string getDescription()
+    {
+        return this.Description;
+    }
+
+    public DateTime getDueDate()
+    {
+        return this.DueDate;
+    }
+
+    public bool getIsCompleted()
+    {
+        return this.IsCompleted;
+    }
 }
 
 class ToDoList
@@ -46,7 +90,7 @@ class ToDoList
                 switch (choice)
                 {
                     case 1:
-                        // CreateTask();
+                        CreateTask();
                         break;
                     case 2:
                         // ListAllTasks();
@@ -85,4 +129,148 @@ class ToDoList
             Console.WriteLine();
         }
     }
+
+    static void CreateTask()
+    {
+        Task newTask = new Task();
+
+        Console.WriteLine("Digite o título da tarefa: ");
+        newTask.setTitle(Console.ReadLine());
+
+        Console.WriteLine("Digite a descrição da tarefa: ");
+        newTask.setDescription(Console.ReadLine());
+
+        Console.WriteLine("Digite a data de vencimento (formato: dd/mm/yyyy): ");
+        // if (DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime dueDate))
+        // {
+        //     newTask.setDueDate(dueDate);
+        // }
+        // else
+        // {
+        //     Console.WriteLine("Data inválida. A tarefa não terá uma data de vencimento.");
+        //     newTask.setDueDate(DateTime.MinValue);
+        // }
+
+        newTask.setIsCompleted(false);
+
+        tasks.Add(newTask);
+
+        Console.WriteLine("Tarefa criada com sucesso.");
+    }
+
+    // static void ListAllTasks()
+    // {
+    //     if (tasks.Count == 0)
+    //     {
+    //         Console.WriteLine("Não há tarefas cadastradas.");
+    //     }
+    //     else
+    //     {
+    //         foreach (var task in tasks)
+    //         {
+    //             Console.WriteLine($"Título: {task.Title} | Descrição: {task.Description} | Data de Vencimento: {task.DueDate.ToString("dd/MM/yyyy")} | Concluída: {(task.IsCompleted ? "Sim" : "Não")}");
+    //         }
+    //     }
+    // }
+
+    // static void MarkTaskAsCompleted()
+    // {
+    //     Console.WriteLine("Digite o número da tarefa que deseja marcar como concluída: ");
+    //     if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber > 0 && taskNumber <= tasks.Count)
+    //     {
+    //         tasks[taskNumber - 1].IsCompleted = true;
+    //         Console.WriteLine("Tarefa marcada como concluída.");
+    //     }
+    //     else
+    //     {
+    //         Console.WriteLine("Número de tarefa inválido.");
+    //     }
+    // }
+
+    // static void ListPendingTasks()
+    // {
+    //     var pendingTasks = tasks.Where(task => !task.IsCompleted).ToList();
+
+    //     if (pendingTasks.Count == 0)
+    //     {
+    //         Console.WriteLine("Não há tarefas pendentes.");
+    //     }
+    //     else
+    //     {
+    //         foreach (var task in pendingTasks)
+    //         {
+    //             Console.WriteLine($"Título: {task.Title} | Descrição: {task.Description} | Data de Vencimento: {task.DueDate.ToString("dd/MM/yyyy")}");
+    //         }
+    //     }
+    // }
+
+    // static void ListCompletedTasks()
+    // {
+    //     var completedTasks = tasks.Where(task => task.IsCompleted).ToList();
+
+    //     if (completedTasks.Count == 0)
+    //     {
+    //         Console.WriteLine("Não há tarefas concluídas.");
+    //     }
+    //     else
+    //     {
+    //         foreach (var task in completedTasks)
+    //         {
+    //             Console.WriteLine($"Título: {task.Title} | Descrição: {task.Description} | Data de Vencimento: {task.DueDate.ToString("dd/MM/yyyy")}");
+    //         }
+    //     }
+    // }
+
+    // static void DeleteTask()
+    // {
+    //     Console.WriteLine("Digite o número da tarefa que deseja excluir: ");
+    //     if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber > 0 && taskNumber <= tasks.Count)
+    //     {
+    //         tasks.RemoveAt(taskNumber - 1);
+    //         Console.WriteLine("Tarefa excluída com sucesso.");
+    //     }
+    //     else
+    //     {
+    //         Console.WriteLine("Número de tarefa inválido.");
+    //     }
+    // }
+
+    // static void SearchByKeyword()
+    // {
+    //     Console.WriteLine("Digite a palavra-chave para buscar tarefas: ");
+    //     string keyword = Console.ReadLine();
+
+    //     var foundTasks = tasks.Where(task => task.Title.Contains(keyword) || task.Description.Contains(keyword)).ToList();
+
+    //     if (foundTasks.Count == 0)
+    //     {
+    //         Console.WriteLine("Nenhuma tarefa encontrada com a palavra-chave fornecida.");
+    //     }
+    //     else
+    //     {
+    //         foreach (var task in foundTasks)
+    //         {
+    //             Console.WriteLine($"Título: {task.Title} | Descrição: {task.Description} | Data de Vencimento: {task.DueDate.ToString("dd/MM/yyyy")} | Concluída: {(task.IsCompleted ? "Sim" : "Não")}");
+    //         }
+    //     }
+    // }
+
+    // static void ShowStatistics()
+    // {
+    //     Console.WriteLine($"Número de tarefas concluídas: {tasks.Count(task => task.IsCompleted)}");
+    //     Console.WriteLine($"Número de tarefas pendentes: {tasks.Count(task => !task.IsCompleted)}");
+
+    //     if (tasks.Count > 0)
+    //     {
+    //         var oldestTask = tasks.OrderBy(task => task.DueDate).First();
+    //         var newestTask = tasks.OrderByDescending(task => task.DueDate).First();
+
+    //         Console.WriteLine($"Tarefa mais antiga: {oldestTask.Title} | Data de Vencimento: {oldestTask.DueDate.ToString("dd/MM/yyyy")}");
+    //         Console.WriteLine($"Tarefa mais recente: {newestTask.Title} | Data de Vencimento: {newestTask.DueDate.ToString("dd/MM/yyyy")}");
+    //     }
+    //     else
+    //     {
+    //         Console.WriteLine("Não há tarefas para exibir estatísticas.");
+    //     }
+    // }
 }
