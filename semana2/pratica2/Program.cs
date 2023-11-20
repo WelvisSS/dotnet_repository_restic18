@@ -5,22 +5,22 @@ using System.Linq;
 
 public class Task
 {
+    private string Title;
+    private string Description;
+    private DateTime DueDate;
+    private bool IsCompleted;
+    private DateTime CreatedDate;
+
     public Task(string title, string description, DateTime dueDate, bool isCompleted)
     {
         this.Title = title;
         this.Description = description;
         this.DueDate = dueDate;
         this.IsCompleted = isCompleted;
+
     }
 
-    public Task()
-    {
-    }
-
-    private string Title;
-    private string Description;
-    private DateTime DueDate;
-    private bool IsCompleted;
+    public Task() { }
 
     public void setTitle(string title)
     {
@@ -267,8 +267,8 @@ class ToDoList
 
         if (tasks.Count > 0)
         {
-            var oldestTask = tasks.OrderBy(task => task.getDueDate()).First();
-            var newestTask = tasks.OrderByDescending(task => task.getDueDate()).First();
+            var oldestTask = tasks[0];
+            var newestTask = tasks[tasks.Count - 1];
 
             Console.WriteLine($"Tarefa mais antiga: {oldestTask.getTitle()} | Data de Vencimento: {oldestTask.getDueDate().ToString("dd/MM/yyyy")}");
             Console.WriteLine($"Tarefa mais recente: {newestTask.getTitle()} | Data de Vencimento: {newestTask.getDueDate().ToString("dd/MM/yyyy")}");
