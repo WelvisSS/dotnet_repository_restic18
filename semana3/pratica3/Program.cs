@@ -4,12 +4,11 @@ using System.Linq;
 
 class Program
 {
-    // Definição da tupla para representar um produto
-    private record Produto(int Codigo, string Nome, int Quantidade, double PrecoUnitario);
+    private record Product(int Code, string Name, int Amount, double UnitPrice);
 
     static void Main()
     {
-        List<Produto> estoque = new List<Produto>();
+        List<Product> stock = new List<Product>();
 
         while (true)
         {
@@ -20,12 +19,12 @@ class Program
             Console.WriteLine("5. Sair");
 
             Console.Write("Escolha uma opção: ");
-            string opcao = Console.ReadLine();
+            string option = Console.ReadLine();
 
-            switch (opcao)
+            switch (option)
             {
                 case "1":
-                    // CadastrarProduto(estoque);
+                    RegisterProduct(stock);
                     break;
                 case "2":
                     // ConsultarProduto(estoque);
@@ -42,6 +41,35 @@ class Program
                     Console.WriteLine("Opção inválida.");
                     break;
             }
+        }
+    }
+
+    static void RegisterProduct(List<Product> stock)
+    {
+        try
+        {
+            Console.WriteLine("Cadastro de Produto:");
+
+            Console.Write("Código: ");
+            int code = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Nome: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Quantidade: ");
+            int quantidade = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Preço unitário: ");
+            double price = Convert.ToDouble(Console.ReadLine());
+
+            Product newProduct = new Product(code, name, quantidade, price);
+            stock.Add(newProduct);
+
+            Console.WriteLine("Produto cadastrado com sucesso!");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Erro: Entrada inválida.");
         }
     }
 }
