@@ -27,7 +27,7 @@ class Program
                     RegisterProduct(stock);
                     break;
                 case "2":
-                    // ConsultarProduto(estoque);
+                    SearchProduct(stock);
                     break;
                 case "3":
                     // AtualizarEstoque(estoque);
@@ -70,6 +70,34 @@ class Program
         catch (FormatException)
         {
             Console.WriteLine("Erro: Entrada inválida.");
+        }
+    }
+
+    static void SearchProduct(List<Product> stock)
+    {
+        try
+        {
+            Console.Write("Digite o código do produto: ");
+            int code = Convert.ToInt32(Console.ReadLine());
+
+            Product product = stock.FirstOrDefault(p => p.Code == code);
+
+            if (product != null)
+            {
+                Console.WriteLine($"Produto encontrado: {product.Name}, Quantidade: {product.Amount}, Preço: {product.UnitPrice}");
+            }
+            else
+            {
+                throw new Exception("Produto não encontrado.");
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Erro: Entrada inválida.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
         }
     }
 }
