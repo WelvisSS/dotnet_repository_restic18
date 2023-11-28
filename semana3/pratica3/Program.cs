@@ -62,6 +62,11 @@ class Storage
             Console.Write("Preço unitário: ");
             double price = Convert.ToDouble(Console.ReadLine());
 
+            if (price < 0)
+            {
+                throw new InvalidInputException("Preço unitário deve ser maior que zero.");
+            }
+
             Product newProduct = new Product(code, name, quantidade, price);
             stock.Add(newProduct);
 
@@ -70,6 +75,10 @@ class Storage
         catch (FormatException)
         {
             Console.WriteLine("Erro: Entrada inválida.");
+        }
+        catch (InvalidInputException ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
         }
     }
 
@@ -88,14 +97,14 @@ class Storage
             }
             else
             {
-                throw new Exception("Produto não encontrado.");
+                throw new ProductNotFoundException("Produto não encontrado.");
             }
         }
         catch (FormatException)
         {
             Console.WriteLine("Erro: Entrada inválida.");
         }
-        catch (Exception ex)
+        catch (ProductNotFoundException ex)
         {
             Console.WriteLine($"Erro: {ex.Message}");
         }
@@ -114,7 +123,7 @@ class Storage
             {
                 Console.WriteLine($"Produto: {product.Name}, Quantidade atual: {product.Amount}");
 
-                Console.Write("Digite a quantidade a ser adicionada (+) ou removida (-): ");
+                Console.Write("Digite a quantidade a ser adicionada (+) ou removida (-) no estoque. Exemplo: +10 ou -5: ");
                 int update = Convert.ToInt32(Console.ReadLine());
 
                 if (product.Amount + update < 0)
@@ -192,4 +201,17 @@ class Storage
                 break;
         }
     }
+}
+
+class ProductNotFoundException : Exception
+{
+    public ProductNotFoundException(string message) : base(message) { }
+}
+class InsufficientQuantityException : Exception
+{
+    public InsufficientQuantityException(string message) : base(message) { }
+}
+class InvalidInputException : Exception
+{
+    public InvalidInputException(string message) : base(message) { }
 }
