@@ -30,7 +30,7 @@ class Program
                     SearchProduct(stock);
                     break;
                 case "3":
-                    // AtualizarEstoque(estoque);
+                    UpdateStock(stock);
                     break;
                 case "4":
                     // GerarRelatorios(estoque);
@@ -85,6 +85,48 @@ class Program
             if (product != null)
             {
                 Console.WriteLine($"Produto encontrado: {product.Name}, Quantidade: {product.Amount}, Preço: {product.UnitPrice}");
+            }
+            else
+            {
+                throw new Exception("Produto não encontrado.");
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Erro: Entrada inválida.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
+        }
+    }
+
+    static void UpdateStock(List<Product> stock)
+    {
+        try
+        {
+            Console.Write("Digite o código do produto: ");
+            int code = Convert.ToInt32(Console.ReadLine());
+
+            Product product = stock.FirstOrDefault(p => p.Code == code);
+
+            if (product != null)
+            {
+                Console.WriteLine($"Produto: {product.Name}, Quantidade atual: {product.Amount}");
+
+                Console.Write("Digite a quantidade a ser adicionada (+) ou removida (-): ");
+                int update = Convert.ToInt32(Console.ReadLine());
+
+                if (product.Amount + update < 0)
+                {
+                    throw new Exception("Quantidade insuficiente para esta remoção.");
+                }
+
+                product = product with { Amount = product.Amount + update };
+                int index = stock.FindIndex(p => p.Code == code);
+                stock[index] = product;
+
+                Console.WriteLine("Estoque atualizado com sucesso!");
             }
             else
             {
