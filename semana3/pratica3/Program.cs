@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-class Program
+class Storage
 {
     private record Product(int Code, string Name, int Amount, double UnitPrice);
 
@@ -33,7 +33,7 @@ class Program
                     UpdateStock(stock);
                     break;
                 case "4":
-                    // GerarRelatorios(estoque);
+                    GenerateReports(stock);
                     break;
                 case "5":
                     return;
@@ -140,6 +140,56 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Erro: {ex.Message}");
+        }
+    }
+
+
+    static void GenerateReports(List<Product> stock)
+    {
+        Console.WriteLine("1. Lista de produtos com quantidade em estoque abaixo de um determinado limite");
+        Console.WriteLine("2. Lista de produtos com valor entre um mínimo e um máximo");
+        Console.WriteLine("3. Informar o valor total do estoque e o valor total de cada produto");
+
+        Console.Write("Escolha uma opção de relatório: ");
+        string option = Console.ReadLine();
+
+        switch (option)
+        {
+            case "1":
+                Console.Write("Informe o limite de quantidade: ");
+                int quantityLimit = Convert.ToInt32(Console.ReadLine());
+
+                var productsBelowLimit = stock.Where(p => p.Amount < quantityLimit);
+                foreach (var product in productsBelowLimit)
+                {
+                    Console.WriteLine($"Produto: {product.Name}, Quantidade: {product.Amount}");
+                }
+                break;
+            case "2":
+                Console.Write("Informe o valor mínimo: ");
+                double minValue = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Informe o valor máximo: ");
+                double maxValue = Convert.ToDouble(Console.ReadLine());
+
+                var productsRangeValue = stock.Where(p => p.UnitPrice >= minValue && p.UnitPrice <= maxValue);
+                foreach (var product in productsRangeValue)
+                {
+                    Console.WriteLine($"Produto: {product.Name}, Preço: {product.UnitPrice}");
+                }
+                break;
+            case "3":
+                double valueTotalStock = stock.Sum(p => p.Amount * p.UnitPrice);
+                Console.WriteLine($"Valor total do estoque: {valueTotalStock}");
+
+                foreach (var product in stock)
+                {
+                    double productValue = product.Amount * product.UnitPrice;
+                    Console.WriteLine($"Produto: {product.Name}, Valor total: {productValue}");
+                }
+                break;
+            default:
+                Console.WriteLine("Opção inválida.");
+                break;
         }
     }
 }
