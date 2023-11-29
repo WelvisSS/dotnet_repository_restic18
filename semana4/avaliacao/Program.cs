@@ -14,12 +14,12 @@
         medico1.DataNascimento = "12/12/2020";
         medico1.CRM = "123453";
 
-        medico2.Nome = "Teste";
+        medico2.Nome = "Andre";
         medico2.CPF = "04734288573";
         medico2.DataNascimento = "12/12/1998";
         medico2.CRM = "123452";
 
-        medico3.Nome = "Welvis";
+        medico3.Nome = "Maria";
         medico3.CPF = "04734288570";
         medico3.DataNascimento = "12/12/1975";
         medico3.CRM = "123451";
@@ -30,12 +30,12 @@
         paciente1.Nome = "Welvis";
         paciente1.CPF = "04734288577";
         paciente1.DataNascimento = "12/12/2020";
-        paciente1.Sexo = "Masculino";
+        paciente1.Sexo = "masculino";
 
-        paciente2.Nome = "Teste";
+        paciente2.Nome = "Maria";
         paciente2.CPF = "04734288574";
         paciente2.DataNascimento = "12/12/2021";
-        paciente2.Sexo = "Feminino";
+        paciente2.Sexo = "feminino";
 
         medico1.AdicionarMedico(medico1, medicos);
         medico2.AdicionarMedico(medico2, medicos);
@@ -60,7 +60,21 @@
             Console.WriteLine($"Informações do médico: Nome: {med.Nome}, CRM: {med.CRM}, CRM: {med.CRM}, Data de nascimento: {med.DataNascimento}\n");
         }
 
+        Console.WriteLine("Filtro por pacientes do sexo feminino:\n");
+        // Filtro por pacientes do sexo feminino
+        List<Paciente> filtro2 = paciente1.PacientePorSexo(pacientes, "feminino");
+        foreach (Paciente pac in filtro2)
+        {
+            Console.WriteLine($"Pacientes femininos: Nome: {pac.Nome}, CPF: {pac.CPF}, Data de nascimento: {pac.DataNascimento}, Sexo: {pac.Sexo}\n");
+        }
 
+        Console.WriteLine("Filtor de pacientes por ordem alfabetica:\n");
 
+        // Filtor de pacientes por ordem alfabetica
+        List<Paciente> filtro3 = paciente1.PacientesOrdemAlfabetica(pacientes);
+        foreach (Paciente pac in filtro3)
+        {
+            Console.WriteLine($"Nome: {pac.Nome}, CPF: {pac.CPF}, Data de nascimento: {pac.DataNascimento}, Sexo: {pac.Sexo}\n\n");
+        }
     }
 }

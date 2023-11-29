@@ -8,7 +8,7 @@ public class Paciente
     string cpf;
     string sexo;
 
-    List<string> sintomas = new List<string>();
+    List<string> sintomas;
 
     public string Nome
     {
@@ -35,11 +35,17 @@ public class Paciente
     }
 
 
-    // public List<string> Sintomas
-    // {
-    //     set { sintomas.Add(value.ElementtAt(0)); }
-    //     get { return sintomas; }
-    // }
+    public List<string> Sintomas
+    {
+        // set { sintomas = value; }
+        get { return sintomas; }
+    }
+
+    public void setSintoma(string sintoma)
+    {
+        sintomas.Add(sintoma);
+    }
+
 
     public void AdicionarPaciente(Paciente paciente, List<Paciente> Pacientes)
     {
@@ -49,4 +55,21 @@ public class Paciente
         }
         Pacientes.Add(paciente);
     }
+
+
+    public List<Paciente> PacientePorSexo(List<Paciente> Pacientes, string sexo)
+    {
+        return Pacientes.Where(p => p.Sexo.ToLower() == sexo.ToLower()).ToList();
+    }
+
+    public List<Paciente> PacientesOrdemAlfabetica(List<Paciente> Pacientes)
+    {
+        return Pacientes.OrderBy(p => p.Nome).ToList();
+    }
+
+    public List<Paciente> PacientesPorSintomas(List<Paciente> Pacientes, string textoSintoma)
+    {
+        return Pacientes.Where(p => p.Sintomas.Any(s => s.Contains(textoSintoma))).ToList();
+    }
+
 }
