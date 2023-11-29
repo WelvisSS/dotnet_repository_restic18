@@ -25,7 +25,7 @@ public class Paciente
     public string CPF
     {
         set { cpf = value; }
-        get { return CPF; }
+        get { return cpf; }
     }
 
     public string Sexo
@@ -34,9 +34,19 @@ public class Paciente
         get { return sexo; }
     }
 
+
     // public List<string> Sintomas
     // {
-    //     set { sintomas.Add(value); }
+    //     set { sintomas.Add(value.ElementtAt(0)); }
     //     get { return sintomas; }
     // }
+
+    public void AdicionarPaciente(Paciente paciente, List<Paciente> Pacientes)
+    {
+        if (Pacientes.Any(p => p.CPF == paciente.CPF))
+        {
+            throw new Exception("CPF já cadastrado para outro paciente.");
+        }
+        Pacientes.Add(paciente);
+    }
 }

@@ -25,7 +25,7 @@ public class Medico
     public string CPF
     {
         set { cpf = value; }
-        get { return CPF; }
+        get { return cpf; }
     }
 
     public string CRM
@@ -48,6 +48,13 @@ public class Medico
         }
         Medicos.Add(medico);
     }
+
+    // public List<Medico> MedicoPorIdade(List<Medico> Medicos, int idadeMinima, int idadeMaxima)
+    // {
+    // DateTime hoje = DateTime.Today;
+    // return Medicos.Where(m => hoje.Year - m.DataNascimento.Year >= idadeMinima &&
+    //                           hoje.Year - m.DataNascimento.Year <= idadeMaxima).ToList();
+    // }
 
 
 }
