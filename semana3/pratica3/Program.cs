@@ -4,11 +4,9 @@ using System.Linq;
 
 class Storage
 {
-    private record Product(int Code, string Name, int Amount, double UnitPrice);
-
     static void Main()
     {
-        List<Product> stock = new List<Product>();
+        var stock = new List<(int Code, string Name, int Amount, double UnitPrice)>();
 
         while (true)
         {
@@ -44,7 +42,7 @@ class Storage
         }
     }
 
-    static void RegisterProduct(List<Product> stock)
+    static void RegisterProduct(List<(int Code, string Name, int Amount, double UnitPrice)> stock)
     {
         try
         {
@@ -67,7 +65,7 @@ class Storage
                 throw new InvalidInputException("Preço unitário deve ser maior que zero.");
             }
 
-            Product newProduct = new Product(code, name, quantidade, price);
+            var newProduct = (code, name, quantidade, price);
             stock.Add(newProduct);
 
             Console.WriteLine("Produto cadastrado com sucesso!");
@@ -82,16 +80,16 @@ class Storage
         }
     }
 
-    static void SearchProduct(List<Product> stock)
+    static void SearchProduct(List<(int Code, string Name, int Amount, double UnitPrice)> stock)
     {
         try
         {
             Console.Write("Digite o código do produto: ");
             int code = Convert.ToInt32(Console.ReadLine());
 
-            Product product = stock.FirstOrDefault(p => p.Code == code);
+            var product = stock.FirstOrDefault(p => p.Code == code);
 
-            if (product != null)
+            if (product != default)
             {
                 Console.WriteLine($"Produto encontrado: {product.Name}, Quantidade: {product.Amount}, Preço: {product.UnitPrice}");
             }
@@ -110,16 +108,16 @@ class Storage
         }
     }
 
-    static void UpdateStock(List<Product> stock)
+    static void UpdateStock(List<(int Code, string Name, int Amount, double UnitPrice)> stock)
     {
         try
         {
             Console.Write("Digite o código do produto: ");
             int code = Convert.ToInt32(Console.ReadLine());
 
-            Product product = stock.FirstOrDefault(p => p.Code == code);
+            var product = stock.FirstOrDefault(p => p.Code == code);
 
-            if (product != null)
+            if (product != default)
             {
                 Console.WriteLine($"Produto: {product.Name}, Quantidade atual: {product.Amount}");
 
@@ -153,7 +151,7 @@ class Storage
     }
 
 
-    static void GenerateReports(List<Product> stock)
+    static void GenerateReports(List<(int Code, string Name, int Amount, double UnitPrice)> stock)
     {
         Console.WriteLine("1. Lista de produtos com quantidade em estoque abaixo de um determinado limite");
         Console.WriteLine("2. Lista de produtos com valor entre um mínimo e um máximo");
