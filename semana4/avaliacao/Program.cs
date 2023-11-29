@@ -16,12 +16,12 @@
 
         medico2.Nome = "Teste";
         medico2.CPF = "04734288573";
-        medico2.DataNascimento = "12/12/2021";
+        medico2.DataNascimento = "12/12/1998";
         medico2.CRM = "123452";
 
         medico3.Nome = "Welvis";
         medico3.CPF = "04734288570";
-        medico3.DataNascimento = "12/12/2020";
+        medico3.DataNascimento = "12/12/1975";
         medico3.CRM = "123451";
 
         Paciente paciente1 = new Paciente();
@@ -46,6 +46,20 @@
 
         Console.WriteLine(medicos.Count);
         Console.WriteLine(pacientes.Count);
+
+
+
+        // Relatórios
+
+        List<Medico> filtro = medico1.MedicoPorIdade(medicos, 18, 30);
+
+        Console.WriteLine("Informações de médicos entre 18 e 30 anos:\n");
+
+        foreach (Medico med in filtro)
+        {
+            Console.WriteLine($"Informações do médico: Nome: {med.Nome}, CRM: {med.CRM}, CRM: {med.CRM}, Data de nascimento: {med.DataNascimento}\n");
+        }
+
 
 
     }

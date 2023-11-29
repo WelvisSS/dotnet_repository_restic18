@@ -25,14 +25,12 @@ public class Medico
             try
             {
                 DateTime dataConvertida = DateTime.ParseExact(value, formatoData, System.Globalization.CultureInfo.InvariantCulture);
-                // Console.WriteLine("Data convertida: " + dataConvertida);
-                // return dataConvertida;
                 dataNascimento = value;
 
             }
             catch (FormatException)
             {
-                Console.WriteLine("Formato de data inválido.");
+                throw new Exception("Formato de data inválido");
             }
         }
         get { return dataNascimento; }
@@ -65,19 +63,19 @@ public class Medico
         Medicos.Add(medico);
     }
 
-    // public List<Medico> MedicoPorIdade(List<Medico> Medicos, int idadeMinima, int idadeMaxima)
-    // {
-    //     DateTime hoje = DateTime.Today;
-    //     return Medicos.Where(m => hoje.Year - m.DataNascimento.Year >= idadeMinima &&
-    //                               hoje.Year - m.DataNascimento.Year <= idadeMaxima).ToList();
-    // }
+    public List<Medico> MedicoPorIdade(List<Medico> Medicos, int idadeMinima, int idadeMaxima)
+    {
+        DateTime hoje = DateTime.Today;
+        return Medicos.Where(m => hoje.Year - converteData(m.DataNascimento).Year >= idadeMinima &&
+                                  hoje.Year - converteData(m.DataNascimento).Year <= idadeMaxima).ToList();
+    }
 
     public DateTime converteData(string dataString)
     {
         string formatoData = "dd/MM/yyyy";
 
         DateTime dataConvertida = DateTime.ParseExact(dataString, formatoData, System.Globalization.CultureInfo.InvariantCulture);
-        Console.WriteLine("Data convertida: " + dataConvertida);
+
         return dataConvertida;
     }
 
