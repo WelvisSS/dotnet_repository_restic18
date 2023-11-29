@@ -34,10 +34,19 @@ public class Medico
         get { return crm; }
     }
 
-    public boolean validarCpf(string cpf)
+    public bool ValidarCPF(string cpf)
     {
+        return cpf.Length == 11;
+    }
 
-        return false;
+
+    public void AdicionarMedico(Medico medico, List<Medico> Medicos)
+    {
+        if (Medicos.Any(m => m.CPF == medico.CPF || m.CRM == medico.CRM))
+        {
+            throw new Exception("CPF ou CRM já cadastrado para outro médico.");
+        }
+        Medicos.Add(medico);
     }
 
 
