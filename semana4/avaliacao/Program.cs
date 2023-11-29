@@ -10,7 +10,7 @@
         Medico medico3 = new Medico();
 
         medico1.Nome = "Welvis";
-        medico1.CPF = "04734288577";
+        medico1.CPF = "04734288571";
         medico1.DataNascimento = "12/12/2020";
         medico1.CRM = "123453";
 
