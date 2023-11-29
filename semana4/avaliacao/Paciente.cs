@@ -8,7 +8,7 @@ public class Paciente
     string cpf;
     string sexo;
 
-    List<string> sintomas;
+    List<string> sintomas = new List<string>();
 
     public string Nome
     {

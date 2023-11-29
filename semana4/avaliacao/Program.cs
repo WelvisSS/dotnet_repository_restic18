@@ -31,11 +31,15 @@
         paciente1.CPF = "04734288577";
         paciente1.DataNascimento = "12/12/2020";
         paciente1.Sexo = "masculino";
+        paciente1.setSintoma("Dor de cabeça");
+        paciente1.setSintoma("Febre");
 
         paciente2.Nome = "Maria";
         paciente2.CPF = "04734288574";
         paciente2.DataNascimento = "12/12/2021";
         paciente2.Sexo = "feminino";
+        paciente2.setSintoma("Febre");
+        paciente2.setSintoma("Tontura");
 
         medico1.AdicionarMedico(medico1, medicos);
         medico2.AdicionarMedico(medico2, medicos);
@@ -43,10 +47,6 @@
 
         paciente1.AdicionarPaciente(paciente1, pacientes);
         paciente1.AdicionarPaciente(paciente2, pacientes);
-
-        Console.WriteLine(medicos.Count);
-        Console.WriteLine(pacientes.Count);
-
 
 
         // Relatórios
@@ -59,6 +59,7 @@
         {
             Console.WriteLine($"Informações do médico: Nome: {med.Nome}, CRM: {med.CRM}, CRM: {med.CRM}, Data de nascimento: {med.DataNascimento}\n");
         }
+        Console.WriteLine("\n");
 
         Console.WriteLine("Filtro por pacientes do sexo feminino:\n");
         // Filtro por pacientes do sexo feminino
@@ -68,13 +69,26 @@
             Console.WriteLine($"Pacientes femininos: Nome: {pac.Nome}, CPF: {pac.CPF}, Data de nascimento: {pac.DataNascimento}, Sexo: {pac.Sexo}\n");
         }
 
-        Console.WriteLine("Filtor de pacientes por ordem alfabetica:\n");
+        Console.WriteLine("Filtro de pacientes por ordem alfabetica:\n");
 
         // Filtor de pacientes por ordem alfabetica
         List<Paciente> filtro3 = paciente1.PacientesOrdemAlfabetica(pacientes);
         foreach (Paciente pac in filtro3)
         {
             Console.WriteLine($"Nome: {pac.Nome}, CPF: {pac.CPF}, Data de nascimento: {pac.DataNascimento}, Sexo: {pac.Sexo}\n\n");
+        }
+
+        Console.WriteLine("Filtro por sintoma (Tontura):\n");
+        List<Paciente> filtro4 = paciente1.PacientesPorSintomas(pacientes, "Tontura");
+        foreach (Paciente pac in filtro4)
+        {
+            Console.WriteLine($"Nome: {pac.Nome}, CPF: {pac.CPF}, Data de nascimento: {pac.DataNascimento}, Sexo: {pac.Sexo}, \nSintomas:");
+            foreach (string sintoma in pac.Sintomas)
+            {
+                Console.WriteLine($"{sintoma}, ");
+            }
+
+            Console.WriteLine($"\n\n");
         }
     }
 }
