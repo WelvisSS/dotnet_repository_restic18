@@ -18,7 +18,21 @@ public class Paciente
 
     public string DataNascimento
     {
-        set { dataNascimento = value; }
+        set
+        {
+            string formatoData = "dd/MM/yyyy";
+
+            try
+            {
+                DateTime dataConvertida = DateTime.ParseExact(value, formatoData, System.Globalization.CultureInfo.InvariantCulture);
+                dataNascimento = value;
+
+            }
+            catch (FormatException)
+            {
+                throw new Exception("Formato de data inválido");
+            }
+        }
         get { return dataNascimento; }
     }
 

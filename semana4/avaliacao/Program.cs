@@ -49,7 +49,7 @@
         paciente1.AdicionarPaciente(paciente2, pacientes);
 
 
-        // Relatórios
+
 
         List<Medico> filtro = medico1.MedicoPorIdade(medicos, 18, 30);
 
