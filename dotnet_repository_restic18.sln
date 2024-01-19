@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulo3", "Modulo3", "{FE0B9BC3-4476-45E6-9CD2-9C8B8A71A3A1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulo3", "Modulo3", "{85AA9E10-8F17-4ED6-9814-E0908E3E4511}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.WebAPI", "Modulo3\TechMed.WebAPI\TechMed.WebAPI.csproj", "{9A189DCF-4605-4A9D-99B9-6FE68CFEC674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.WebAPI", "Modulo3\TechMed.WebAPI\TechMed.WebAPI.csproj", "{3EC334AB-4EAE-4CE2-A818-FA46428EAC51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A189DCF-4605-4A9D-99B9-6FE68CFEC674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A189DCF-4605-4A9D-99B9-6FE68CFEC674}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A189DCF-4605-4A9D-99B9-6FE68CFEC674}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A189DCF-4605-4A9D-99B9-6FE68CFEC674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC334AB-4EAE-4CE2-A818-FA46428EAC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC334AB-4EAE-4CE2-A818-FA46428EAC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC334AB-4EAE-4CE2-A818-FA46428EAC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC334AB-4EAE-4CE2-A818-FA46428EAC51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9A189DCF-4605-4A9D-99B9-6FE68CFEC674} = {FE0B9BC3-4476-45E6-9CD2-9C8B8A71A3A1}
+		{3EC334AB-4EAE-4CE2-A818-FA46428EAC51} = {85AA9E10-8F17-4ED6-9814-E0908E3E4511}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {41E9D6CB-E65A-41BE-8E1B-F39F492756BE}
+		SolutionGuid = {E2143A5C-760A-428C-83A4-8C330F3D2EB9}
 	EndGlobalSection
 EndGlobal
