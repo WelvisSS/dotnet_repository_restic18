@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulo1", "Modulo1", "{B8657895-76EA-4BCA-B087-C5597BFBEC30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAPI", "Modulo1\MinimalAPI\MinimalAPI.csproj", "{DDCB4A30-7C1B-4538-96A9-7E661311DE9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulo2", "Modulo2", "{2945A534-5ACF-4202-AE2E-5706DBD99FBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.Domain", "Modulo2\TechMed.Domain\TechMed.Domain.csproj", "{072019A9-7A52-4E20-8090-849A54D4F431}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed_EFCore", "Modulo2\TechMed_EFCore\TechMed_EFCore.csproj", "{1662B693-F6A4-4249-97D8-16D4878C5B8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.Infra.Data", "Modulo2\TechMed.Infra\TechMed.Infra.Data.csproj", "{183E6F3E-4EAD-4D35-A86B-B55B05565EAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulo3", "Modulo3", "{EF91118C-DE62-4015-BE42-4B2BFE206275}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.WebAPI", "Modulo3\TechMed.WebAPI\TechMed.WebAPI.csproj", "{75FBB559-0CA2-4496-9A15-C027BB722E5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDCB4A30-7C1B-4538-96A9-7E661311DE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCB4A30-7C1B-4538-96A9-7E661311DE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCB4A30-7C1B-4538-96A9-7E661311DE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDCB4A30-7C1B-4538-96A9-7E661311DE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072019A9-7A52-4E20-8090-849A54D4F431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072019A9-7A52-4E20-8090-849A54D4F431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072019A9-7A52-4E20-8090-849A54D4F431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072019A9-7A52-4E20-8090-849A54D4F431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1662B693-F6A4-4249-97D8-16D4878C5B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1662B693-F6A4-4249-97D8-16D4878C5B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1662B693-F6A4-4249-97D8-16D4878C5B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1662B693-F6A4-4249-97D8-16D4878C5B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183E6F3E-4EAD-4D35-A86B-B55B05565EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183E6F3E-4EAD-4D35-A86B-B55B05565EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183E6F3E-4EAD-4D35-A86B-B55B05565EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183E6F3E-4EAD-4D35-A86B-B55B05565EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75FBB559-0CA2-4496-9A15-C027BB722E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75FBB559-0CA2-4496-9A15-C027BB722E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75FBB559-0CA2-4496-9A15-C027BB722E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75FBB559-0CA2-4496-9A15-C027BB722E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DDCB4A30-7C1B-4538-96A9-7E661311DE9E} = {B8657895-76EA-4BCA-B087-C5597BFBEC30}
+		{072019A9-7A52-4E20-8090-849A54D4F431} = {2945A534-5ACF-4202-AE2E-5706DBD99FBA}
+		{1662B693-F6A4-4249-97D8-16D4878C5B8B} = {2945A534-5ACF-4202-AE2E-5706DBD99FBA}
+		{183E6F3E-4EAD-4D35-A86B-B55B05565EAA} = {2945A534-5ACF-4202-AE2E-5706DBD99FBA}
+		{75FBB559-0CA2-4496-9A15-C027BB722E5E} = {EF91118C-DE62-4015-BE42-4B2BFE206275}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43C0543E-9439-48A6-BCAA-422F06937D8C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,198 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed_EFCore/TechMed_EFCore.csproj": {}
+  },
+  "projects": {
+    "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
+        "projectName": "TechMed.Domain",
+        "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
+        "packagesPath": "/home/welvis/.nuget/packages/",
+        "outputPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/welvis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
+        "projectName": "TechMed.Infra.Data",
+        "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
+        "packagesPath": "/home/welvis/.nuget/packages/",
+        "outputPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/welvis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj": {
+                "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed_EFCore/TechMed_EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed_EFCore/TechMed_EFCore.csproj",
+        "projectName": "TechMed_EFCore",
+        "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed_EFCore/TechMed_EFCore.csproj",
+        "packagesPath": "/home/welvis/.nuget/packages/",
+        "outputPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed_EFCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/welvis/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj": {
+                "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj"
+              },
+              "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj": {
+                "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
