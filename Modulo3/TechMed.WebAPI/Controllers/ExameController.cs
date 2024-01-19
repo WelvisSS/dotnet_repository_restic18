@@ -1,70 +1,70 @@
-// using Microsoft.AspNetCore.Mvc;
-// using TechMed.WebAPI.Infra.Data.Interfaces;
-// using TechMed.WebAPI.Model;
+using Microsoft.AspNetCore.Mvc;
+using TechMed.WebAPI.Infra.Data.Interfaces;
+using TechMed.WebAPI.Model;
 
-// namespace TechMed.WebAPI.Controllers;
+namespace TechMed.WebAPI.Controllers;
 
-// [ApiController]
-// [Route("/api/v0.1/")]
-// public class ExameController : ControllerBase
-// {
-//     private readonly IExameCollection _exame;
-//     public List<Atendimento> Atendimentos => _exame.GetAll().ToList();
-//     public AtendimentoController(IAtendimentoCollection atendimentos) => _atendimento = atendimentos;
+[ApiController]
+[Route("/api/v0.1/")]
+public class ExameController : ControllerBase
+{
+    private readonly IExameCollection _exame;
+    public List<Exame> Exames => _exame.GetAll().ToList();
+    public ExameController(IExameCollection exames) => _exame = exames;
 
-//     [HttpGet("atendimentos")]
-//     public IActionResult Get()
-//     {
-//         return Ok(Atendimentos);
-//     }
+    [HttpGet("exames")]
+    public IActionResult Get()
+    {
+        return Ok(Exames);
+    }
 
-//     [HttpGet("atendimento/{id}")]
-//     public IActionResult GetById(int id)
-//     {
-//         var atendimento = _atendimento.GetById(id);
-//         return Ok(atendimento);
-//     }
+    [HttpGet("exames/{id}")]
+    public IActionResult GetById(int id)
+    {
+        var exame = _exame.GetById(id);
+        return Ok(exame);
+    }
 
-//     [HttpPost("atendimento")]
-//     public IActionResult Post([FromBody] Atendimento atendimento)
-//     {
-//         _atendimento.Create(atendimento);
-//         return CreatedAtAction(nameof(Get), atendimento);
-//     }
+    [HttpPost("exame")]
+    public IActionResult Post([FromBody] Exame exame)
+    {
+        _exame.Create(exame);
+        return CreatedAtAction(nameof(Get), exame);
+    }
 
-//     [HttpPut("atendimento/{id}")]
-//     public IActionResult Put(int id, [FromBody] Atendimento atendimento)
-//     {
-//         if (_atendimento.GetById(id) == null)
-//             return NoContent();
-//         _atendimento.Update(id, atendimento);
-//         return Ok(_atendimento.GetById(id));
-//     }
+    [HttpPut("exame/{id}")]
+    public IActionResult Put(int id, [FromBody] Exame exame)
+    {
+        if (_exame.GetById(id) == null)
+            return NoContent();
+        _exame.Update(id, exame);
+        return Ok(_exame.GetById(id));
+    }
 
-//     [HttpDelete("atendimento/{id}")]
-//     public IActionResult Delete(int id)
-//     {
-//         if (_atendimento.GetById(id) == null)
-//             return NoContent();
-//         _atendimento.Delete(id);
-//         return Ok();
-//     }
+    [HttpDelete("exame/{id}")]
+    public IActionResult Delete(int id)
+    {
+        if (_exame.GetById(id) == null)
+            return NoContent();
+        _exame.Delete(id);
+        return Ok();
+    }
 
-//     // [HttpGet("medico/{id}/atendimentos")]
-//     // public IActionResult GetAtendimentos(int id)
-//     // {
-//     //    var atendimento = Enumerable.Range(1, 5).Select(index => new Atendimento
-//     //      {
-//     //          AtendimentoId = index,
-//     //          DataHora = DateTime.Now,
-//     //          MedicoId = id,
-//     //          Medico = new Medico
-//     //          {
-//     //              MedicoId = id,
-//     //              Nome = $"Medico {id}"
-//     //          }
-//     //      })
-//     //      .ToArray();
-//     //    return Ok(atendimento);
-//     // }
-// }
+    // [HttpGet("medico/{id}/atendimentos")]
+    // public IActionResult GetAtendimentos(int id)
+    // {
+    //    var atendimento = Enumerable.Range(1, 5).Select(index => new Atendimento
+    //      {
+    //          AtendimentoId = index,
+    //          DataHora = DateTime.Now,
+    //          MedicoId = id,
+    //          Medico = new Medico
+    //          {
+    //              MedicoId = id,
+    //              Nome = $"Medico {id}"
+    //          }
+    //      })
+    //      .ToArray();
+    //    return Ok(atendimento);
+    // }
+}
