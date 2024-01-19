@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MlKUf17Ti8HXb1TVR6RwTnAHEZ5SL0ZRY5S8biNPuaSwl4UZ+zdJoBqD3kb8+6l/bnntXgRUVI1LcBWnjflQUQ==",
+  "dgSpecHash": "fT5gMcknPaQyXpu7Wu0z6sdkRsI/Sb2OtTA+PtupJA4a3XUtEa6WYrH/3me82Hc7OyJjlV6CMPMjqU9PEhJ/Dw==",
   "success": true,
-  "projectFilePath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed_EFCore/TechMed_EFCore.csproj",
+  "projectFilePath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed_EFCore/TechMed_EFCore.csproj",
   "expectedPackageFiles": [
     "/home/welvis/.nuget/packages/microsoft.entityframeworkcore/7.0.14/microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
     "/home/welvis/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.14/microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",

@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TechMed_EFCore
-build_property.ProjectDir = /home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed_EFCore/
+build_property.ProjectDir = /home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed_EFCore/

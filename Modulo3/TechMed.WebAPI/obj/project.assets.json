@@ -474,11 +474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj",
+      "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj",
       "projectName": "TechMed.WebAPI",
-      "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj",
+      "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj",
       "packagesPath": "/home/welvis/.nuget/packages/",
-      "outputPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo3/TechMed.WebAPI/obj/",
+      "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/welvis/.nuget/NuGet/NuGet.Config"

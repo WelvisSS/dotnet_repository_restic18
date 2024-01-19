@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
+      "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
       "projectName": "TechMed.Domain",
-      "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
+      "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
       "packagesPath": "/home/welvis/.nuget/packages/",
-      "outputPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/obj/",
+      "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/welvis/.nuget/NuGet/NuGet.Config"

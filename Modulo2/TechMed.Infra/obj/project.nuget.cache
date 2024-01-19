@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Si6+JkhhfQYp6j0I/MNXnhmxnBnc58sjsvY+1xtmbnPacKk+UMBk426H2VeCwVCjgxp0X1aRi4W3u/vV9wbKOg==",
+  "dgSpecHash": "8EtLBic/lUPrHGhKNngWW7EE4mBQxlaiSsbMvx3306bQxKkUjvx69z45CUY0fKO/WmdQG6rNmBWzDpn3tKnzQw==",
   "success": true,
-  "projectFilePath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
+  "projectFilePath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
   "expectedPackageFiles": [
     "/home/welvis/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/welvis/.nuget/packages/microsoft.entityframeworkcore/7.0.14/microsoft.entityframeworkcore.7.0.14.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj": {}
+    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj": {}
   },
   "projects": {
-    "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj": {
+    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/TechMed.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
+        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
         "projectName": "TechMed.Domain",
-        "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
+        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/TechMed.Domain.csproj",
         "packagesPath": "/home/welvis/.nuget/packages/",
-        "outputPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/obj/",
+        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/welvis/.nuget/NuGet/NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj": {
+    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
+        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
         "projectName": "TechMed.Infra.Data",
-        "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
+        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Infra/TechMed.Infra.Data.csproj",
         "packagesPath": "/home/welvis/.nuget/packages/",
-        "outputPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Infra/obj/",
+        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Infra/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/welvis/.nuget/NuGet/NuGet.Config"
@@ -79,8 +79,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj": {
-                "projectPath": "/home/welvis/Música/tic18_dotnet/ExemplosAula/Modulo2/TechMed.Domain/TechMed.Domain.csproj"
+              "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/TechMed.Domain.csproj": {
+                "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo2/TechMed.Domain/TechMed.Domain.csproj"
               }
             }
           }
