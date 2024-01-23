@@ -27,10 +27,12 @@ public class AtendimentoDB : IAtendimentoCollection
     }
     public void Update(int id, Atendimento atendimento)
     {
-        // var atendimentoDB = _atendimentos.FirstOrDefault(m => m.PacienteId == id);
-        // if (atendimentoDB is not null)
-        // {
-        //     atendimentoDB. = atendimento.Nome;
-        // }
+        var atendimentoDB = _atendimentos.FirstOrDefault(m => m.AtendimentoId == id);
+        if (atendimentoDB is not null)
+        {
+            atendimentoDB.Paciente = atendimento.Paciente;
+            atendimentoDB.Medico = atendimento.Medico;
+            atendimentoDB.Exames = atendimento.Exames;
+        }
     }
 }

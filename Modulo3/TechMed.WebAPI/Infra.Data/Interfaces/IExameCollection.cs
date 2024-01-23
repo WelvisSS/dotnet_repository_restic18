@@ -1,11 +1,6 @@
 using TechMed.WebAPI.Model;
 
 namespace TechMed.WebAPI.Infra.Data.Interfaces;
-public interface IExameCollection
+public interface IExameCollection : IBaseCollection<Exame>
 {
-    void Create(Exame exame);
-    ICollection<Exame> GetAll();
-    Exame? GetById(int id);
-    void Update(int id, Exame exame);
-    void Delete(int id);
 }

@@ -27,10 +27,11 @@ public class ExameDB : IExameCollection
     }
     public void Update(int id, Exame exame)
     {
-        // var atendimentoDB = _exames.FirstOrDefault(m => m.PacienteId == id);
-        // if (atendimentoDB is not null)
-        // {
-        //     atendimentoDB. = atendimento.Nome;
-        // }
+        var exameDB = _exames.FirstOrDefault(m => m.ExameId == id);
+        if (exameDB is not null)
+        {
+            exameDB.Medico = exame.Medico;
+            exameDB.Paciente = exame.Paciente;
+        }
     }
 }
