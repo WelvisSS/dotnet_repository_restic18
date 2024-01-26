@@ -1,0 +1,15 @@
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\bin\Debug\net7.0\TechMed.Infrastructure.deps.json
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\bin\Debug\net7.0\TechMed.Infrastructure.dll
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\bin\Debug\net7.0\TechMed.Infrastructure.pdb
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\bin\Debug\net7.0\TechMed.Core.dll
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\bin\Debug\net7.0\TechMed.Core.pdb
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.AssemblyInfo.cs
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.csproj.CopyComplete
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.dll
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\refint\TechMed.Infrastructure.dll
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\TechMed.Infrastructure.pdb
+C:\Users\Welvis\Downloads\tic18_dotnet-TechMed_CleanArchitecture\tic18_dotnet-TechMed_CleanArchitecture\ExemplosAula\Modulo3\TechMed.Infrastructure\obj\Debug\net7.0\ref\TechMed.Infrastructure.dll
