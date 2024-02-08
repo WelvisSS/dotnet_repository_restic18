@@ -1,36 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj": {}
+    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.WebAPI\\TechMed.WebAPI.csproj": {}
   },
   "projects": {
-    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/TechMed.Application.csproj": {
+    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Application\\TechMed.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/TechMed.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Application\\TechMed.Application.csproj",
         "projectName": "TechMed.Application",
-        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/TechMed.Application.csproj",
-        "packagesPath": "/home/welvis/.nuget/packages/",
-        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/",
+        "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Application\\TechMed.Application.csproj",
+        "packagesPath": "C:\\Users\\Welvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/welvis/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Welvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj": {
-                "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj"
+              "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj": {
+                "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj"
               },
-              "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/TechMed.Infrastructure.csproj": {
-                "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/TechMed.Infrastructure.csproj"
+              "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\TechMed.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\TechMed.Infrastructure.csproj"
               }
             }
           }
@@ -66,26 +68,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj": {
+    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj",
         "projectName": "TechMed.Core",
-        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj",
-        "packagesPath": "/home/welvis/.nuget/packages/",
-        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/",
+        "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj",
+        "packagesPath": "C:\\Users\\Welvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/welvis/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Welvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -119,34 +123,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/TechMed.Infrastructure.csproj": {
+    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\TechMed.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/TechMed.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\TechMed.Infrastructure.csproj",
         "projectName": "TechMed.Infrastructure",
-        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/TechMed.Infrastructure.csproj",
-        "packagesPath": "/home/welvis/.nuget/packages/",
-        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\TechMed.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Welvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/welvis/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Welvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj": {
-                "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj"
+              "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj": {
+                "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj"
               }
             }
           }
@@ -168,6 +174,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             }
           },
           "imports": [
@@ -186,37 +196,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj": {
+    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.WebAPI\\TechMed.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.WebAPI\\TechMed.WebAPI.csproj",
         "projectName": "TechMed.WebAPI",
-        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/TechMed.WebAPI.csproj",
-        "packagesPath": "/home/welvis/.nuget/packages/",
-        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.WebAPI/obj/",
+        "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.WebAPI\\TechMed.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Welvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/welvis/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Welvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/TechMed.Application.csproj": {
-                "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/TechMed.Application.csproj"
+              "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Application\\TechMed.Application.csproj": {
+                "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Application\\TechMed.Application.csproj"
               },
-              "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/TechMed.Infrastructure.csproj": {
-                "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Infrastructure/TechMed.Infrastructure.csproj"
+              "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\TechMed.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Infrastructure\\TechMed.Infrastructure.csproj"
               }
             }
           }
@@ -265,7 +277,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

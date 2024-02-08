@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj": {}
+    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj": {}
   },
   "projects": {
-    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj": {
+    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj",
         "projectName": "TechMed.Core",
-        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj",
-        "packagesPath": "/home/welvis/.nuget/packages/",
-        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/",
+        "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj",
+        "packagesPath": "C:\\Users\\Welvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/welvis/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Welvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

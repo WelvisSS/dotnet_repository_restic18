@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n2OEhxIaS938tw/Aq0IjjzYL5ez34EkSq0uCF2qClw+RWfM3EOfsYu8+XYI/EimSrd60Zg0mQydlpB+HtVQ0hw==",
+  "dgSpecHash": "681VrRwplgPPiwBidpU8b5BJwLKhL84W0aTT2uZ+EuYyM+SHRr90/fAYvCd5hy5tM98K6EYAIyhaEtF1CPzAPQ==",
   "success": true,
-  "projectFilePath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/TechMed.Core.csproj",
+  "projectFilePath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\Modulo3\\TechMed.Core\\TechMed.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using TechMed.Application.Auth;
 using TechMed.Application.Services;
 using TechMed.Application.Services.Interfaces;
+using TechMed.Infrastructure.Auth;
 using TechMed.Infrastructure.Persistence;
 using TechMed.Infrastructure.Persistence.Interfaces;
 
@@ -13,13 +14,16 @@ builder.Services.AddScoped<IMedicoService, MedicoService>();
 builder.Services.AddScoped<IPacienteService, PacienteService>();
 builder.Services.AddScoped<IAtendimentoService, AtendimentoService>();
 builder.Services.AddScoped<IExameService, ExameService>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
-builder.Services.AddDbContext<TechMedDbContext>(options => {
+builder.Services.AddDbContext<TechMedDbContext>(options =>
+{
     var connectionString = builder.Configuration.GetConnectionString("TechMedDb");
 
     var serverVersion = ServerVersion.AutoDetect(connectionString);
 
-      options.UseMySql(connectionString, serverVersion);
+    options.UseMySql(connectionString, serverVersion);
 });
 
 builder.Services.AddControllers();
@@ -34,7 +38,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseMiddleware<SimpleAuthHandler>();
+    // app.UseMiddleware<SimpleAuthHandler>();
 }
 
 app.UseHttpsRedirection();

@@ -1,0 +1,12 @@
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\bin\Debug\net7.0\TechMed.Core.deps.json
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\bin\Debug\net7.0\TechMed.Core.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\bin\Debug\net7.0\TechMed.Core.pdb
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\TechMed.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\TechMed.Core.AssemblyInfoInputs.cache
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\TechMed.Core.AssemblyInfo.cs
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\TechMed.Core.csproj.CoreCompileInputs.cache
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\TechMed.Core.sourcelink.json
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\TechMed.Core.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\refint\TechMed.Core.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\TechMed.Core.pdb
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.Core\obj\Debug\net7.0\ref\TechMed.Core.dll
