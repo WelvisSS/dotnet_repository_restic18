@@ -53,3 +53,10 @@ C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.
 C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\obj\Debug\net7.0\TechMed.WebAPI.pdb
 C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\obj\Debug\net7.0\TechMed.WebAPI.genruntimeconfig.cache
 C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\obj\Debug\net7.0\ref\TechMed.WebAPI.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Welvis\Documents\Residencia\dotnet_repository_restic18\Modulo3\TechMed.WebAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
