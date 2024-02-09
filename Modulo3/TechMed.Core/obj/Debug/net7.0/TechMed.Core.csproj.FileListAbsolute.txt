@@ -1,0 +1,12 @@
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/bin/Debug/net7.0/TechMed.Core.deps.json
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/bin/Debug/net7.0/TechMed.Core.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/bin/Debug/net7.0/TechMed.Core.pdb
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/TechMed.Core.csproj.AssemblyReference.cache
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/TechMed.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/TechMed.Core.AssemblyInfoInputs.cache
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/TechMed.Core.AssemblyInfo.cs
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/TechMed.Core.csproj.CoreCompileInputs.cache
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/TechMed.Core.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/refint/TechMed.Core.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/TechMed.Core.pdb
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Core/obj/Debug/net7.0/ref/TechMed.Core.dll

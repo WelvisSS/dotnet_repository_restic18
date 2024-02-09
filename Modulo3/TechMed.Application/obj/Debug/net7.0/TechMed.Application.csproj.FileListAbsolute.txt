@@ -1,0 +1,17 @@
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/bin/Debug/net7.0/TechMed.Application.deps.json
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/bin/Debug/net7.0/TechMed.Application.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/bin/Debug/net7.0/TechMed.Application.pdb
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/bin/Debug/net7.0/TechMed.Core.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/bin/Debug/net7.0/TechMed.Infrastructure.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/bin/Debug/net7.0/TechMed.Core.pdb
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/bin/Debug/net7.0/TechMed.Infrastructure.pdb
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.csproj.AssemblyReference.cache
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.AssemblyInfoInputs.cache
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.AssemblyInfo.cs
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.csproj.CoreCompileInputs.cache
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.csproj.CopyComplete
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/refint/TechMed.Application.dll
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/TechMed.Application.pdb
+/home/welvis/Documentos/Residencia/dotnet_repository_restic18/Modulo3/TechMed.Application/obj/Debug/net7.0/ref/TechMed.Application.dll
