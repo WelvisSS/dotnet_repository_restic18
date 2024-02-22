@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\MvcMovie\\MvcMovie.csproj": {}
+    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/MvcMovie/MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\MvcMovie\\MvcMovie.csproj": {
+    "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/MvcMovie/MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/MvcMovie/MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\MvcMovie\\MvcMovie.csproj",
-        "packagesPath": "C:\\Users\\Welvis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Welvis\\Documents\\Residencia\\dotnet_repository_restic18\\MvcMovie\\obj\\",
+        "projectPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/MvcMovie/MvcMovie.csproj",
+        "packagesPath": "/home/welvis/.nuget/packages/",
+        "outputPath": "/home/welvis/Documentos/Residencia/dotnet_repository_restic18/MvcMovie/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Welvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/welvis/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,6 +61,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             }
           },
           "imports": [
@@ -84,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
         }
       }
     }
